@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ 
+.noto-sans jp-<uniquifier> {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+body{
+  font-family:"Poppins";
+   background-color:rgb(101, 115, 196);  
+   text-align:center; 
+    
+  top:50%;
+  
+ 
+} 
+
+
+.color-box{ background-color: rgb(112,101,196);
+   
+ }
+ .color-box p{padding-left: 12px;  padding-right:12px;
+   
+ } .color-box h6{padding-left: 12px;  padding-right:12px;
+   
+ }
+ 
+a {
+    color: #efe2ff;
+  }
+
+hr{
+    height: 1px;
+    background-color: rgb(113,110,185);
+    border: none;
+}
+ 
+  *{
+    margin:0;
+    padding: 0;
+  } 
+  .wrapper{
+    width: 90%;
+    margin: 0 auto; 
+  }
+  header{
+    width:100%;
+    height:100px;
+    background: rgb(101, 115, 196);
+    position:fixed;
+  }
+
+  .logo{
+ 
+    float:right;
+    text-align: right;
+    line-height:50px;
+ 
+  }
+  .logo a{
+    text-decoration:none;
+    font-size:50px;
+    font-family:'Pacifico';
+    color: #fff 
+  }
+  nav{
+    float:left;
+    line-height:50px;
+  }
+  nav a{
+    text-decoration:none;
+    font-family:'Poppins'; 
+    letter-spacing:2px;
+    font-size:20px;
+    color: #fff;
+    padding: 25px;  
+    margin: 0 1px;
+    font-weight:500;
+  }
+  .navbar a:hover{
+    background: #310672;
+    color: #d7cfffd8;
+ 
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(101, 115, 196);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .dropdown {
+    float: left; 
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 30px;  
+
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+   left:0px;
+ 
+  }
+     
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(112,101,196);
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-family:'Poppins';
+    position: absolute;
+    background-color: rgb(42, 24, 83);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #170ff4;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+
+
+
+  
+.banner-area{
+    background-image: url(Images/smokingavatar.jpg);
+    background-size:cover;
+    background-position: center center;
+    top:70px;
+    height:100vh;
+    width:100%;
+    position:fixed;
+
+}
+/*rgb(194,51,193) pretty pink*/
+.banner-area:after{
+    content:'';
+    position:absolute;
+    top:0; 
+    left:0;
+    display:black;
+    width:100%;
+    height:100%;
+    background: #4d4298;
+    opacity:.6;
+    z-index:-1;
+}
+.banner-area h2{
+    padding-top:2%;
+    font-size:90px;
+    color:#fff;
+}
+.banner-area h5{ 
+  padding-top:2%;
+  font-size:30px;
+  color:#fff;
+}
+.banner-area h3{
+  padding-top:8%;
+  font-size:30px;
+  color:#fff;
+}
+.banner-area h4{
+  padding-top:15%;
+  font-size:70px;
+  color:#fff;
+}
+
+.banner-area h1{
+  padding-top:1%;
+  font-size:10px;
+  color:#fff;
+}
+.banner-area h6{ 
+  padding-top:8%;
+  font-size:10px;
+  color:#fff;
+}
+.content-area{
+    width: 100%;
+ 
+    position:relative;
+    background:rgb(14, 37, 96);
+    top:600px;
+}
+.content-area h2{
+    font-size: 40px;
+    margin:0;
+    padding-top:30px;
+    letter-spacing:2px;
+
+}
+.conten-area p{
+    padding : 2% 0; 
+    line-height:  30px;
+    text-align:justify;
+
+}
+  h1{
+	 
+    size: 79px ;
+   color: #d4e9e2; 
+} 
+
+
+h2,h3,h4,h5{
+  
+color:#d4e9e2;
+
+}
+
+h6{
+   color: #d4e9e2;
+}
+p{
+    size:20px;
+   color:#d4e9e2;
+}
+
+a:link {
+color: rgb(193, 228, 253);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: rgb(184, 238, 255);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(231, 213, 16);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: rgb(255, 251, 149);
+background-color: transparent;
+text-decoration: underline;
+}/*
+
+bubble after this!!*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(19,39,93);
+  position: relative;
+  overflow: hidden;
+}
+
+
+button{
+    font-family:'Poppins';
+    font-weight: bold;
+    color: #fff;
+    background-color:transparent;
+    border-radius:50%;
+    border:none;
+    position:relative;
+    cursor:pointer;
+    padding: 10px 20px;
+    overflow:hidden;
+    margin:10px;
+    height: fit-content;
+    width:fit-content;
+ 
+    border-radius:6rem;
+}
+button span:not(:nth-child(6)){
+    background:#435fab;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    height:40px; 
+    width:40px ;
+    border-radius:50%;
+    transition: 0.3s ease;
+
+}
+button span:nth-child(6){
+    position:relative;
+}
+button span:nth-child(1){
+    transform:translate(-3.3em,-4em);
+}
+button span:nth-child(2){
+    transform:translate(-6em,1.3em);
+}
+button span:nth-child(3){
+    transform:translate(-.2em,1.8em);
+}  
+button span:nth-child(4){
+    transform:translate(3.5em,1.4em);
+}
+button span:nth-child(5){
+    transform:translate(3.5em,4em);
+}
+button:hover span:not(:nth-child(6)){
+    transform:translate(-50%,-50%);
+    transition:1.5s ease; 
+}
+
+.bub {
+  width: 260px;
+  height: 260px;
+  border: 1px solid white;
+  box-shadow: inset 10px -10px 20px white;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .01);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: -100px;
+  /* animation: bubble 3s ease-in infinite; */
+}
+
+.bub::before {
+  position: absolute;
+  content: ""; 
+
+  background-color: rgba(255, 255, 255, 0.776);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50px;
+  right: 46px;
+  box-shadow: 0px 0px 20px white;
+}
+
+.bub.a {
+  left: 10%;
+  animation: bubble2 10s ease-in 1s infinite;
+}
+
+.bub.b {
+  left: 20%;
+  animation: bubble 7.5s ease-in 3s infinite;
+}
+
+.bub.c {
+  left: 28%;
+  animation: bubble 25s ease-in 15s infinite;
+}
+
+.bub.d {
+  left: 40%;
+  animation: bubble 9s ease-in 2.5s infinite;
+}
+
+.bub.e {
+  left: 75%;
+  animation: bubble2 11.5s ease-in 12.5s infinite;
+}
+
+.bub.f {
+  left: 90%;
+  animation: bubble 12.5s ease-in 15s infinite;
+}
+
+.bub.g {
+  left: 60%;
+  animation: bubble 11s ease-in 5s infinite;
+}
+
+.bub.h {
+  left: 50%;
+  animation: bubble 8s ease-in 9s infinite;
+}
+ 
+.bub.i {
+  left: 65%;
+  animation: bubble2 9s ease-in 10s infinite;
+}
+
+.bub.j {
+  left: 3%;
+  animation: bubble 10s ease-in 7.5s infinite;
+}
+
+.bub.k {
+  left: 35%;
+  animation: bubble2 15s ease-in infinite;
+}
+
+@keyframes bubble {
+  0% {
+      opacity: 0;
+  }
+  10%,
+  93% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(90px, -700px);
+      display: none;
+  }
+}
+
+@keyframes bubble2 {
+  0% {
+      opacity: 0;
+  }
+  10%,
+  93% {
+      opacity: 1;
+  }
+  100% {
+      transform: translate(-90px, -700px);
+      display: none;
+  }
+}
