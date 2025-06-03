@@ -135,7 +135,11 @@ body{
   top:50%;
 }
 /*font*/
-
+h1{  
+  animation-name: h1;
+  animation-duration: 14.34s; 
+  animation-iteration-count: infinite;
+}
 img {
   transition: transform .7s ease-in-out;
 }
@@ -329,13 +333,14 @@ main {
       color: #132044;
     }
 
+    .comment-container{
+display: flex; align-items: center; justify-content: center;
+    }
     /*comment*/
     .comment-section {
-      max-height: 50vh;
-      max-width: 100%;
-  animation-name: commentsection;
-  animation-duration: 11s;
-  animation-iteration-count: infinite;
+      max-height: 45vh; 
+      max-width: 60%;
+ 
       overflow-y: scroll;
     }
     .comment {
@@ -343,19 +348,19 @@ main {
       padding: 2%;
       margin: 2%;
       background-color: #ffff;
-      color: black;
+      color: rgb(0, 0, 0);
      }
 
   /*comment*/
 
 /*main*/ 
-@keyframes   commentsection {
-  0%   {background-color: #e6f2ff;}
-  20%  {background-color: #adcbec;}
-  40%  {background-color: #65abf5;}
-  60% {background-color: #83b3e7;}
-  80% {background-color: #b5d1ee;}
-  100%   {background-color: #e6f2ff;}
+@keyframes   h1 {
+  0%   {color: #0d3450;}
+  20%  {color: #279ef3;}
+  40%  {color: #143a61;}
+  60% {color: #338ef6;}
+  80% {color: #2386ef;}
+  100%   {color: #0d3450;}
 }
 
 
@@ -501,27 +506,7 @@ text-decoration: underline;
   
 /*image*/ 
 
-.wrapper {
-  position: relative;
-  height: 300px;
-  width: 600px;
-  margin: 50px 0;
-  
-  display: flex;
-  flex-direction: row;
-  
-  transition: all 200ms ease-in-out;
-}
-
-.image-wrapper {
-  height: 300px;
-  width: 450px;
-  overflow: hidden;
-  border-radius: 5px;
-  cursor: pointer;
-
-  transition: all 200ms ease-in-out;
-}
+ 
 
 img {
   height: 300px;
@@ -529,49 +514,8 @@ img {
   object-fit: cover;
   object-position: top;
   
-  transition: all 200ms ease-in-out;
-}
-
-.book-design-image {
-  object-position: center;
-}
-
-.header-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  left: 380px;
-  transition: all 200ms ease-in-out;
-  overflow: hidden;
-  
-}
-
-h1 {
-  position: relative;
-  bottom: 0;
-  height: 300px;
-  color: #fff;
-  font-size: 80px; 
-  text-transform: uppercase;
-  
-  transition: all 200ms ease-in-out;
-}
-
-.wrapper:hover img {
-  transform: scale(2);
-  /*object-position: bottom;*/
-}
-
-.wrapper:hover h1 {
-  bottom: 300px;
-  transform: scale(.4);
-}
-
-.wrapper:hover .image-wrapper {
-  width: 800px;
-}
+  transition: all 1434ms ease-in-out;
+}   
 /*image*/
 
 
